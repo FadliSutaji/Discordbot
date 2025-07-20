@@ -6,7 +6,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-API_KEY = "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"  # ganti dengan API Key kamu
+API_KEY = ""  # ganti dengan API Key kamu
 
 conversation_history = [
     {"role": "system", "content": "Kamu adalah asisten Discord."}
@@ -55,4 +55,4 @@ async def tanya(ctx, *, pertanyaan):
         await ctx.send(f"{ctx.author.mention} ❌ Gagal ambil jawaban dari AI.")
         print("❌ ERROR:", e)
 
-bot.run("MTM5MjEwOTA1NTE5OTE1MDI1Mw.GeP7fy.kFxwggcMI3kqq96o65Lvi-drrFUI05dFuoL66k")  # token bot discord kamu
+bot.run("")  # token bot discord kamu
